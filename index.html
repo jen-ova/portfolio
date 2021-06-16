@@ -1,56 +1,116 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jen Stewart</title>
-    </head>
-    <body>
-        <main>
-            <header>
-                <img src="images/jenstewart-sml.png" alt="Jen Stewart">
-                <h1>Jen Stewart</h1>
-                <h2>Hey, I'm a junior developer. Check out some of the stuff I've done.</h2>
-                <nav>
-                    <a href="/pages/contact.html" target="_blank">Contact</a>
-                <br />
-                    <a href="pages/projects.html" target="_blank">Projects</a>
-                </nav>
-            </header>
-            <br />
-            <hr />
-                <h3>About Me</h3>
-                <p>I'm Jen, designer and aerialist turned junior developer.</p>
-                <p>I got into code as a hobby in my teens, designing graphics and websites for gaming fansites. Now I'm trying to make a career out of it!</p>
-                <figure>
-                    <img src="images/gaming.png" alt="Avid gamer">
-                    <br />
-                    <figcaption>Avid PC gamer</figcaption> 
-                </figure>
-                <figure>
-                    <img src="images/climbing.png" alt="Love of bouldering & alternative fitness">
-                    <br />
-                    <figcaption>Love of bouldering and alternative fitness</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/craftbeer.png" alt="Craft beer enthusiast">
-                    <br />
-                    <figcaption>Craft beer enthusiast</figcaption>
-                </figure>
-                <h4>Qualities</h4>
-                    <ol>
-                        <li>Curiosity & love of learning</li>
-                        <li>Intuitive thinking</li>
-                        <li>Adaptablilty</li>
-                    </ol>
-                <h4>Hobbies & Interests</h4>
-                    <uL>
-                        <li>Aerial Arts</li>
-                        <li>Climbing</li>
-                        <li>Gaming</li>
-                        <li>Craft beer</li>
-                    </uL>
-            <footer>
-                <p>2021, created by Jen Stewart</p>
-            </footer>
-        </main>
-    </body>
+<head>
+    <title>Jen Stewart || Web Developer</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet">	
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="favicon/ico" />
+</head>
+
+<body>
+
+	<header>
+		<h2><a href="#">JS</a></h2>
+		<nav>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</nav>
+	</header>
+
+
+	<section class="header">
+		<div class="background-image" style="background-image: url(images/succ3.jpg);"></div>
+		<h1>Jen Stewart</h1>
+		<h3>Web Developer</h3>
+	</section>
+
+	<section id="projects" class="projects">
+		<h3 class="title-light">Projects</h3>
+		<p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<ul class="grid">
+			<li class="small" style="background-image: url(images/climbing.png);"></li>
+			<li class="large" style="background-image: url(images/craftbeer.png);"></li>
+			<li class="large" style="background-image: url(images/gaming.png);"></li>
+			<li class="small" style="background-image: url(images/tako.jpg);"></li>
+	</section>
+	
+
+	<section id="about" class="features">
+		<h3 class="title-dark">About</h3>
+		<p class="dark">I'm Jen, designer and aerialist turned junior developer.
+		<br />I got into code as a hobby in my teens, designing graphics and websites for gaming fansites. Now I'm trying to make a career out of it!</p>
+		<ul class="grid">
+			<li>
+				<img src="images/succ-outline.png">
+				<h4>Tech Stack</h4>
+				<p class="dark">HTML<br />CSS</p>
+			</li>
+			<li>
+				<img src="images/succ-filled.png">
+				<h4>Qualities</h4>
+				<p class="dark">Curiosity & love of learning<br />Intuitive thinking<br/>Adaptablilty</p>
+			</li>
+			<li>
+				<img src="images/succ-outline.png">
+				<h4>Hobbies</h4>
+				<p class="dark">Aerial Arts<br />Climbing<br />Gaming<br /></p>
+			</li>
+		</div>
+	</section>
+
+
+	<section id="contact" class="contact">
+		<h3 class="title-light">Let's work together</h3>	
+		<p class="light">Whether you're looking for a full website design from scratch, a redesign to an existing site or you want to collab, I'd love to hear from you.</p>
+		<form action="contact.php" method="post">
+
+			<fieldset>
+				<legend>Your details</legend>
+				<label>
+					Name:
+					<input type="text" name="name" />
+				</label>
+				<label>
+					Email:
+					<input type="text" name="email" />
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Tell me more</legend>
+				<label for="reason">Reason for contacting:</label>
+				<select name="reason" id="reasonforcontact">
+					<option value="design">Website design</option>
+					<option value="redesign">Website redesign</option>
+					<option value="quote">Quote</option>
+					<option value="edit">Edit to existing project</option>
+					<option value="collab">Collab</option>
+				</select>
+				<label>
+					<br /><br />
+					<label for="comments">Comments:</label>
+					<textarea id="comments" placeholder="Details about your project"></textarea>
+					<br /><br />
+					<input type="submit" value="Send">
+
+				</form>
+			</fieldset>
+	</section>
+
+	<footer>
+		<ul class="social">
+			<li><a href="linkedin" target="_blank"><img src="images/linkedin.png" class="socialicon" alt="LinkedIn"></a></li>
+			<li><a href="twitter" target="_blank"><img src="images/twitter.png" class="socialicon" alt="Twitter"></a></li>
+			<li><a href="github" target="_blank"><img src="images/github.png" class="socialicon" alt="GitHub"></a></li>
+		</ul>
+		<p>2021, created by Jen Stewart</p>
+	</footer>
+
+</body>
+
 </html>
