@@ -41,7 +41,7 @@
 	</section>
 	
 
-	<section id="about" class="features">
+	<section id="about" class="about">
 		<h3 class="title-dark">About</h3>
 		<p class="dark">I'm Jen, designer and aerialist turned junior developer.
 		<br />I got into code as a hobby in my teens, designing graphics and websites for gaming fansites. Now I'm trying to make a career out of it!</p>
@@ -68,38 +68,12 @@
 	<section id="contact" class="contact">
 		<h3 class="title-light">Let's work together</h3>	
 		<p class="light">Whether you're looking for a full website design from scratch, a redesign to an existing site or you want to collab, I'd love to hear from you.</p>
-		<form action="contact.php" method="post">
-
-			<fieldset>
-				<legend>Your details</legend>
-				<label>
-					Name:
-					<input type="text" name="name" />
-				</label>
-				<label>
-					Email:
-					<input type="text" name="email" />
-				</label>
-			</fieldset>
-			<fieldset>
-				<legend>Tell me more</legend>
-				<label for="reason">Reason for contacting:</label>
-				<select name="reason" id="reasonforcontact">
-					<option value="design">Website design</option>
-					<option value="redesign">Website redesign</option>
-					<option value="quote">Quote</option>
-					<option value="edit">Edit to existing project</option>
-					<option value="collab">Collab</option>
-				</select>
-				<label>
-					<br /><br />
-					<label for="comments">Comments:</label>
-					<textarea id="comments" placeholder="Details about your project"></textarea>
-					<br /><br />
-					<input type="submit" value="Send">
-
-				</form>
-			</fieldset>
+		<form>      
+			<input name="name" type="text" class="form" placeholder="Name" />   
+			<input name="email" type="text" class="form" placeholder="Email" />
+			<textarea name="text" class="form" placeholder="Message"></textarea>
+			<input type="submit" value="SEND"/>
+		  </form>
 	</section>
 
 	<footer>

@@ -228,7 +228,7 @@ header nav li:last-child{
 
 .projects .grid li{
 	padding: 20px;
-	height: 350px;
+	height: 500px;
 	border-radius: 3px;
 
 	background-clip: content-box;
@@ -238,11 +238,11 @@ header nav li:last-child{
 }
 
 .projects .grid li.small{
-	flex-basis: 40%;
+	flex-basis: 50%;
 }
 
 .projects .grid li.large{
-	flex-basis: 60%;
+	flex-basis: 50%;
 }
 
 
@@ -258,26 +258,26 @@ header nav li:last-child{
 
 
 /*----------------------
- 	Features Section
+ 	About Section
 ----------------------*/
 
-.features{
+.about{
 	background-color: #4a5256;
 }
 
-.features .grid li{
+.about .grid li{
 	padding: 0 30px;
 	flex-basis: 33%;
 	text-align: center;
 }
 
-.features .grid li h4{
+.about .grid li h4{
 	color: #d5d7e0;
     font-size: 30px;
     margin-bottom: 25px;
 }
 
-.features .grid li p{
+.about .grid li p{
 	font-size: 20px;
     margin: 0;
 }
@@ -285,12 +285,12 @@ header nav li:last-child{
 
 @media (max-width: 1000px){
 
-	.features .grid li{
+	.about .grid li{
 		flex-basis: 70%;
 		margin-bottom: 65px;
 	}
 
-	.features .grid li:last-child{
+	.about .grid li:last-child{
 		margin-bottom: 0;
 	}
 
@@ -299,55 +299,11 @@ header nav li:last-child{
 
 @media (max-width: 600px){
 
-	.features .grid li{
+	.about .grid li{
 		flex-basis: 100%;
 	}
 
 }
-
-
-
-/*--------------------
- 	Reviews Section
---------------------*/
-
-.reviews{
-	background-color: #d5d7e0;
-	color: white;
-}
-
-.reviews .quote{
-	text-align: center;
-	width: 80%;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.reviews .author{
-    font-size: 18px;
-    margin-bottom: 50px;
-}
-
-.reviews .author:last-child{
-    margin-bottom: 0;
-}
-
-@media (max-width: 1000px){
-
-	.reviews .quote{
-		font-size: 20px;
-	}
-
-	.reviews .author{
-	    font-size: 16px;
-	}
-
-}
-
-
 
 /*---------------------
  	Contact Section
@@ -357,28 +313,9 @@ header nav li:last-child{
 	background-color: #d5d7e0;
 }
 
-.contact form{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-
-	max-width: 800px;
-	width: 80%;
+input[type=text], textarea {
+	background-color: teal;
 }
-
-.contact form input{
-	padding: 15px;
-	flex: 1;
-	margin-right: 30px;
-	font-size: 18px;
-	color: #555;
-}
-
-.contact form .btn{
-	padding: 18px 42px;
-}
-
 
 @media (max-width: 800px){
 
